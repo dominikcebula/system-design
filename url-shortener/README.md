@@ -16,7 +16,7 @@ url https://url.com/11PVWGSpX6
 ## Out of scope
 
 * Short URLs management
-* URL analytics
+* URLs analytics
 * AuthN and AuthZ
 
 # Non-functional requirements
