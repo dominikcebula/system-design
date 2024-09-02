@@ -74,7 +74,21 @@ url https://url.com/11PVWGSpX6
 
 ## URL Shortening
 
-TBD
+URL will be shortened using Base 62 encoding and ID generated for given long url. If Short URL already exist for given
+Long URL, already existing value will be used.
+
+1. Check if Long URL already exists in URLs DB.
+2. If yes, return `200 OK` with `location` header containing Short URL.
+3. Generate unique ID for given URL, example: `12841`.
+4. Base 62 encode `12841`, which will give `3idcElN`.
+5. Save unique ID, given URL and Base 62 value in URLs table.
+6. Return `201 Created` with `location` header containing Short URL.
+
+## URL Redirection
+
+1. Check if Short URL exists in URLs DB.
+2. If yes, return `301 Moved Permanently` with `location` header set to Long URL.
+3. If no, return `404 Not Found`.
 
 ## ID Generation
 
