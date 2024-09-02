@@ -13,6 +13,7 @@ url https://url.com/11PVWGSpX6
 
 * Short URLs management
 * URL analytics
+* AuthN and AuthZ
 
 # Non-functional requirements
 
