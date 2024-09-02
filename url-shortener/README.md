@@ -7,7 +7,7 @@
 
 Example:
 Given URL https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp/B0C91X1GT8 service generates a short
-url https://go.io/11PVWGSpX6
+url https://url.com/11PVWGSpX6
 
 ## Out of scope
 
