@@ -32,16 +32,19 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
   "channels": [
     {
       "channelType": "SMS",
-      "phoneNumber": "123123123"
+      "phoneNumber": "123123123",
+      "enabled": "true"
     },
     {
       "channelType": "E_MAIL",
-      "emailAddress": "user@mail.com"
+      "emailAddress": "user@mail.com",
+      "enabled": "true"
     },
     {
       "channelType": "MOBILE_PUSH",
       "device_id": "483737234",
-      "device_token": "SJ48S3FH496S3R"
+      "device_token": "SJ48S3FH496S3R",
+      "enabled": "true"
     }
   ]
 }
