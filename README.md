@@ -5,6 +5,7 @@ This repository contains sample System Design Problems.
 # System Design Problems
 
 * [URL Shortener](url-shortener%2FREADME.md)
+* [Notification System](notification-system%2FREADME.md)
 
 # Author
 
