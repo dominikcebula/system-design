@@ -92,7 +92,26 @@ Long URL, already existing value will be used.
 
 ## ID Generation
 
-TBD
+To avoid complexity with distributed ID generation and long Base 62 values, ACID compliant SQL DB with Sequences will be
+used for that purposes. To avoid Single Point of Failure (SPOF), DB will be setup in HA Active/Passive mode.
+
+Whenever new ID is required, sequence value will be incremented.
+
+### Alternatives
+
+* Twitter Snowflake
+* UUID
+* Custom Timestamp and Machine ID based ID generator
+* CRC32 with collision detection and hash retry mechanism
+* Substring of MD5 or SHA-1 with collision detection and hash retry mechanism
+* Distributed ID generation with replication amount nodes
+
+Each of the listed alternative suffers either from Short URL being long, or from having to retry ID generation because
+of hash collision, or risking partitions among nodes and sacrificing availability for consistency when replicating IDs
+among
+nodes that generate ID.
+
+Due to above, ID generation using ACID compliant SQL DB with Sequences was used.
 
 # Author
 
