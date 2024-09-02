@@ -47,7 +47,19 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 }
 ```
 
-* Send notification
+* Send notification - request `POST /api/v1/notifications/send` with body:
+
+```json
+{
+  "to": {
+    "user_id": "10050"
+  },
+  "notification": {
+    "title": "Lorem ipsum dolor sit amet",
+    "body": "Maecenas pulvinar, sem vel lobortis blandit, turpis dolor cursus est, id maximus libero enim non orci."
+  }
+}
+```
 
 # Entities
 
