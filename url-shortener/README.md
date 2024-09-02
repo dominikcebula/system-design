@@ -23,11 +23,11 @@ url https://url.com/11PVWGSpX6
   * Write operations per second = `100 * 10^6 / 86400 = 1157`
   * Read operations per second = `1157 * 10 = 11570`
 * Storage
-  * Average DB Entry Size [B] = Avg Long Url + Avg Short Url + ID = `83 + 10 + 8 = 101`
-  * DB Size After 1 Year [TB] = `1 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 3.35`
-  * DB Size After 2 Year [TB] = `2 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 6.7`
-  * DB Size After 5 Year [TB] = `5 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 16.75`
-  * DB Size After 10 Year [TB] = `10 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 33.5`
+    * Average DB Entry Size [B] = Avg Long Url + Avg Short Url + ID = `83 + 10 + 8 = 101`
+    * DB Size After 1 Year [TB] = `1 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 3.35`
+    * DB Size After 2 Year [TB] = `2 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 6.7`
+    * DB Size After 5 Year [TB] = `5 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 16.75`
+    * DB Size After 10 Year [TB] = `10 * 365 * 100*10^6 * 101 / 1024 / 1024 / 1024 / 1024 = 33.5`
 * Availability - 99.9%
 * Latency - <300ms
 * Data consistency - strong
@@ -35,7 +35,19 @@ url https://url.com/11PVWGSpX6
 
 # APIs
 
-TBD
+* Redirect to long url based on short url
+    * Request: `GET /api/v1/urls/:shortUrl`
+    * Response:
+        * `301 Moved Permanently` with `location` header - redirect user to long url based on short url
+        * `404 Not Found` - when short url was not found
+* Add new shortUrl based on longUrl
+    * Request: `POST /api/v1/urls` with body
+      `{ 'longUrl': 'https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp/B0C91X1GT8' }`
+    * Response:
+        * `201 Created` with `location` header containing value like `location: https://url.com/11PVWGSpX6` - when
+          shortUrl for longUrl was created
+        * `200 OK` with `location` header containing value like `location: https://url.com/11PVWGSpX6` - when
+          shortUrl for longUrl did already exist
 
 # Entities
 
