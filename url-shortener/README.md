@@ -7,7 +7,7 @@ Design URL Shortening Service that will redirect user to long URL based on given
 # Core Use Cases
 
 * Given a long url, service generates a short url for it
-* Given a short url, service redirects a user to short url
+* Given a short url, service redirects a user to long url
 
 Example:
 Given URL https://www.amazon.com/Design-Patterns-Distilled-Dominik-Cebula-ebook/dp/B0C91X1GT8 service generates a short
