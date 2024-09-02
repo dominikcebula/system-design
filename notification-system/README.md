@@ -19,9 +19,9 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 # Non-functional requirements
 
 * Traffic
-    * 10 million mobile push notifications
-    * 5 million e-mails
-    * 1 million SMS
+    * 10 million mobile push notifications per day
+    * 5 million e-mails per day
+    * 1 million SMS per day
 
 # APIs
 
