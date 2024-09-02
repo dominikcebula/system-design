@@ -51,11 +51,16 @@ url https://url.com/11PVWGSpX6
 
 # Entities
 
-TBD
+|      URLs |               |
+|----------:|---------------|
+|        ID | bigint        |
+|  LONG_URL | varchar(2048) |
+| SHORT_URL | varchar(16)   |
 
 # Microservices
 
-TBD
+* Redirection Svc
+* Shortening Svc
 
 # High Level Design
 
