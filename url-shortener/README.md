@@ -65,7 +65,7 @@ url https://url.com/11PVWGSpX6
 
 # High Level Design
 
-![diagram.svg](diagram.svg)
+![diagram.png](diagram.png)
 
 # Deep dives
 
