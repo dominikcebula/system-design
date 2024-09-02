@@ -30,7 +30,6 @@ url https://url.com/11PVWGSpX6
 * Availability - 99.9%
 * Latency - <300ms
 * Data consistency - strong
-* Data durability - 99.999%
 * Client types - Browser, Mobile
 
 # APIs
