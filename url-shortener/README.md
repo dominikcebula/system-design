@@ -1,5 +1,9 @@
 # URL Shortener
 
+# Overview
+
+Design URL Shortening Service that will redirect user to long URL based on given short URL.
+
 # Core Use Cases
 
 * Given a long url, service generates a short url for it
