@@ -65,7 +65,6 @@ url https://url.com/11PVWGSpX6
 
 * Redirection Svc
 * Shortening Svc
-* ID Generation Svc
 
 # High Level Design
 
