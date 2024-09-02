@@ -61,8 +61,19 @@ url https://url.com/11PVWGSpX6
 
 * Redirection Svc
 * Shortening Svc
+* ID Generation Svc
 
 # High Level Design
+
+![diagram.svg](diagram.svg)
+
+# Deep dives
+
+## URL Shortening
+
+TBD
+
+## ID Generation
 
 TBD
 
