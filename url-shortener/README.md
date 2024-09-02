@@ -92,7 +92,7 @@ Long URL, already existing value will be used.
 
 ## ID Generation
 
-To avoid complexity with distributed ID generation and long Base 62 values, ACID compliant SQL DB with Sequences will be
+To avoid complexity with distributed ID generation and long hash values, ACID compliant SQL DB with Sequences will be
 used for that purposes. To avoid Single Point of Failure (SPOF), DB will be setup in HA Active/Passive mode.
 
 Whenever new ID is required, sequence value will be incremented.
