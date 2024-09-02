@@ -4,17 +4,17 @@
 
 Design a notification system that will support Mobile Push, E-Mail and SMS.
 
-# Core Use Cases
+# Functional requirements
 
+* User can sign up for notifications
+* User can opt out from receiving notifications on a selected device
+* Notification can be sent to a user
 * Notifications can be sent via:
     * Mobile Push
         * Android
         * iOS
     * E-Mail
     * SMS
-* User signs up for notifications
-* User can opt out from receiving notifications on a selected device
-* Notification can be sent to a user
 
 # Non-functional requirements
 

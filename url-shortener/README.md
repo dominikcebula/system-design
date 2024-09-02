@@ -4,7 +4,7 @@
 
 Design URL Shortening Service that will redirect user to long URL based on given short URL.
 
-# Core Use Cases
+# Functional requirements
 
 * Given a long url, service generates a short url for it
 * Given a short url, service redirects a user to long url
