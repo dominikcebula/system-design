@@ -2,17 +2,20 @@
 
 # Overview
 
-TBD
+Design a news feed system.
 
 # Functional requirements
 
-TBD
+* User can publish a post
+* User can see posts published by friends that he/she follows
+* User sees posts sorted in a reverse chronological order
+* User can publish text, videos and images
+* User can have up to 500 friends
 
 # Non-functional requirements
 
 * Traffic
-    * TBD
-    * TBD
+  * 10 million daily active users
 * Storage
     * TBD
 * Availability - 99.9%
