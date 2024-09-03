@@ -97,6 +97,18 @@ Design a news feed system.
 ]
 ```
 
+* Upload Image
+    * start upload - `POST /api/v1/media/images`, response will contain `200 OK` with `location` header pointing to the
+      place were data should be uploaded
+    * upload file chunks - `POST /api/v1/media/images/0241b7c0-6dc3-787e-87c6-68165e593c3a`
+    * finalize upload - `POST /api/v1/media/images/0241b7c0-6dc3-787e-87c6-68165e593c3a/finalize`
+
+* Upload Video
+    * start upload - `POST /api/v1/media/videos`, response will contain `200 OK` with `location` header pointing to the
+      place were data should be uploaded
+    * upload file chunks - `POST /api/v1/media/videos/0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680`
+    * finalize upload - `POST /api/v1/media/images/0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680/finalize`
+
 # Entities
 
 TBD
