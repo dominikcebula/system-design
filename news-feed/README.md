@@ -20,7 +20,7 @@ Design a news feed system.
   * Assumption - 30% of users are daily publishers
   * Assumption - each user looks at news feed 8 times a day
   * Number of posts created each day - $`10*10^6 * 30\% = 3`$ million
-  * Number of feed read operations each day - $`8 * 10*10^6 = 80`$ million reads
+  * Number of feed read operations each day - $`8 * 10*10^6 = 80`$ million
   * Number of posts created each second - $`3*10^6 / 86400 = 35`$
   * Number of feed read operations each second - $`80*10^6 / 86400 = 925`$
 * Availability - 99.9%
