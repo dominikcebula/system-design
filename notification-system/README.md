@@ -15,6 +15,9 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
         * iOS
     * E-Mail
     * SMS
+* User can have multiple devices
+* User can have only a single e-mail
+* User can have only a single phone number
 
 # Non-functional requirements
 
@@ -22,6 +25,7 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
     * 10 million mobile push notifications per day
     * 5 million e-mails per day
     * 1 million SMS per day
+  * 10 million monthly active users
 
 # APIs
 
@@ -29,21 +33,23 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 
 ```json
 {
-  "channels": [
+  "sms": {
+    "phoneNumber": "123123123",
+    "enabled": "true"
+  },
+  "email": {
+    "emailAddress": "user@mail.com",
+    "enabled": "true"
+  },
+  "mobile_push": [
     {
-      "channelType": "SMS",
-      "phoneNumber": "123123123",
-      "enabled": "true"
-    },
-    {
-      "channelType": "E_MAIL",
-      "emailAddress": "user@mail.com",
-      "enabled": "true"
-    },
-    {
-      "channelType": "MOBILE_PUSH",
       "device_id": "483737234",
       "device_token": "SJ48S3FH496S3R",
+      "enabled": "true"
+    },
+    {
+      "device_id": "753673331",
+      "device_token": "H5A2D4AE3342S",
       "enabled": "true"
     }
   ]
@@ -66,7 +72,20 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 
 # Entities
 
-TBD
+|                  user |              |
+|----------------------:|--------------|
+|               user_id | int          |
+|      sms_phone_number | varchar(16)  |
+|   sms_channel_enabled | boolean      |
+|                 email | varchar(320) |
+| email_channel_enabled | boolean      |
+
+|       device |         |
+|-------------:|---------|
+|    device_id | int     |
+|      user_id | int     |
+| device_token | varchar |
+|      enabled | boolean |
 
 # Microservices
 
