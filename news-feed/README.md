@@ -10,19 +10,30 @@ Design a news feed system.
 * User can see posts published by friends that he/she follows
 * User sees posts sorted in a reverse chronological order
 * User can publish text, videos and images
-* User can have up to 500 friends
+* User can have up to 5000 friends
 
 # Non-functional requirements
 
 * Traffic
   * 10 million daily active users
-* Storage
-  * Assumption - 30% of users are daily publishers
-  * Assumption - each user looks at news feed 8 times a day
+  * 30% of users are daily publishers
+  * Each user looks at news feed 8 times a day
   * Number of posts created each day - $`10*10^6 * 30\% = 3`$ million
   * Number of feed read operations each day - $`8 * 10*10^6 = 80`$ million
   * Number of posts created each second - $`3*10^6 / 86400 = 35`$
   * Number of feed read operations each second - $`80*10^6 / 86400 = 925`$
+* Storage
+  * DB
+    * DB Single post size (excluding images and videos size) = `800` bytes
+    * DB Storage increase each day - `800 * 3*10^6 / 1024 / 1024 / 1024 = 2.24` GB
+    * DB Storage increase each yer - `2.24 * 365 = 817` GB
+    * DB Storage 1st year - `1 * 817 / 1024 = 0.79` TB
+    * DB Storage 2nd year - `2 * 817 / 1024 = 1.59` TB
+    * DB Storage 3rd year - `3 * 817 / 1024 = 2.39` TB
+    * DB Storage 5th year - `5 * 817 / 1024 = 3.98` TB
+    * DB Storage 10th year - `10 * 817 / 1024 = 7.97` TB
+  * Media
+    * TBD
 * Availability - 99.9%
 * Latency - <300ms
 * Data consistency - eventual
