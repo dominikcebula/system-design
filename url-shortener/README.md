@@ -61,11 +61,6 @@ url https://url.com/11PVWGSpX6
 |  LONG_URL | varchar(2048) |
 | SHORT_URL | varchar(16)   |
 
-# Microservices
-
-* Redirection Svc
-* Shortening Svc
-
 # High Level Design
 
 ![diagram.png](diagram.png)

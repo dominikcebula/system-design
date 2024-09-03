@@ -87,13 +87,9 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 | device_token | varchar |
 |      enabled | boolean |
 
-# Microservices
-
-* TBD
-
 # High Level Design
 
-TBD
+![diagram.png](diagram.png)
 
 # Deep dives
 
