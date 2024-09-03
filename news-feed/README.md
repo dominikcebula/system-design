@@ -22,7 +22,7 @@ Design a news feed system.
   * Number of posts created each day - 3 million
 * Availability - 99.9%
 * Latency - <300ms
-* Data consistency - strong
+* Data consistency - eventual
 * Client types - Browser, Mobile
 
 # APIs
