@@ -30,16 +30,24 @@ Design a news feed system.
     * Number of videos uploaded each second - $`0.3*10^6 / 86400 = 3.47`$
 * Storage
     * DB
-        * DB Single post size (excluding images and videos size) = `800` bytes
-        * DB Storage increase each day - `800 * 3*10^6 / 1024 / 1024 / 1024 = 2.24` GB
-        * DB Storage increase each yer - `2.24 * 365 = 817` GB
-        * DB Storage 1st year - `1 * 817 / 1024 = 0.79` TB
-        * DB Storage 2nd year - `2 * 817 / 1024 = 1.59` TB
-        * DB Storage 3rd year - `3 * 817 / 1024 = 2.39` TB
-        * DB Storage 5th year - `5 * 817 / 1024 = 3.98` TB
-        * DB Storage 10th year - `10 * 817 / 1024 = 7.97` TB
+        * DB Single post size (excluding images and videos size) = $`800`$ bytes
+        * DB Storage increase each day - $`800 * 3*10^6 / 1024 / 1024 / 1024 = 2.24`$ GB
+        * DB Storage increase each yer - $`2.24 * 365 = 817`$ GB
+        * DB Storage 1st year - $`1 * 817 / 1024 = 0.79`$ TB
+        * DB Storage 2nd year - $`2 * 817 / 1024 = 1.59`$ TB
+        * DB Storage 3rd year - $`3 * 817 / 1024 = 2.39`$ TB
+        * DB Storage 5th year - $`5 * 817 / 1024 = 3.98`$ TB
+        * DB Storage 10th year - $`10 * 817 / 1024 = 7.97`$ TB
     * Media
-        * TBD
+        * Average Image Size - $`0.5`$ MB
+        * Average Video Size - $`24`$ MB
+        * Media Storage increase each day = $`((2.7*10^6 * 0.5) + (0.3*10^6 * 24)) / 1024 / 1024 = 8.15`$ TB
+        * Media Storage increase each year = $`365 * 8.15 / 1024 = 2.9`$ PB
+        * Media Storage 1st year = $`1 * 2.9 = 2.9`$ PB
+        * Media Storage 2nd year = $`2 * 2.9 = 5.8`$ PB
+        * Media Storage 3rd year = $`3 * 2.9 = 8.7`$ PB
+        * Media Storage 5th year = $`5 * 2.9 = 14.5`$ PB
+        * Media Storage 10th year = $`10 * 2.9 = 29`$ PB
 * Availability - 99.9%
 * Latency - <300ms
 * Data consistency - eventual
