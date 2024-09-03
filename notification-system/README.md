@@ -23,9 +23,19 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 
 * Traffic
     * 10 million mobile push notifications per day
+        * 115 mobile push notifications per second
     * 5 million e-mails per day
+        * 58 e-mails per second
     * 1 million SMS per day
-  * 10 million monthly active users
+        * 11 SMS per second
+    * 50 million registered users
+* Storage
+    * Single Signup Payload Size = $`400`$ bytes
+    * Storage Required for Signups Persistence = $`400 * 50*10^6 / 1024 /1024 / 1024 / 1024 = 19`$ GBs
+* Availability - 99.9%
+* Latency - <300ms
+* Data consistency - strong
+* Client types - Browser, Mobile, Services that needs to send notifications
 
 # APIs
 
@@ -65,7 +75,7 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
   },
   "notification": {
     "title": "Lorem ipsum dolor sit amet",
-    "body": "Maecenas pulvinar, sem vel lobortis blandit, turpis dolor cursus est, id maximus libero enim non orci."
+    "body": "Maecenas pulvinar, sem vel lobortis blandit, turpis dolor cursus est."
   }
 }
 ```
@@ -90,10 +100,6 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 # High Level Design
 
 ![diagram.png](diagram.png)
-
-# Deep dives
-
-TBD
 
 # Author
 
