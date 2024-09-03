@@ -64,11 +64,11 @@ Design a news feed system.
   "media": [
     {
       "type": "IMAGE",
-      "upload-id": "0241b7c0-6dc3-787e-87c6-68165e593c3a"
+      "media_id": "0241b7c0-6dc3-787e-87c6-68165e593c3a"
     },
     {
       "type": "VIDEO",
-      "upload-id": "0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680"
+      "media_id": "0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680"
     }
   ]
 }
@@ -86,11 +86,11 @@ Design a news feed system.
     "media": [
       {
         "type": "IMAGE",
-        "media-id": "0241b7c0-6dc3-787e-87c6-68165e593c3a"
+        "media_id": "0241b7c0-6dc3-787e-87c6-68165e593c3a"
       },
       {
         "type": "VIDEO",
-        "media-id": "0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680"
+        "media_id": "0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680"
       }
     ]
   }
