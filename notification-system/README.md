@@ -7,7 +7,7 @@ Design a notification system that will support Mobile Push, E-Mail and SMS.
 # Functional requirements
 
 * User can sign up for notifications
-* User can opt out from receiving notifications on a selected device
+* User can opt out from receiving notifications on a selected channel
 * Notification can be sent to a user
 * Notifications can be sent via:
     * Mobile Push
