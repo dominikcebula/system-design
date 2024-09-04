@@ -33,7 +33,15 @@ Design a video sharing platform like YouTube.
 * Storage
     * DB
         * Number of videos uploaded each day - $`10\% * 5*10^6 = 500k`$
-        * Average size of video metadata - $`TBD`$
+      * Average size of video metadata - $`100B + 500B = 600B`$
+      * Metadata storage increase each day = $`500k * 600B /1024/1024 = 286 MB`$
+      * Metadata storage increase each month = $`286MB * 30 /1024 = 8.37 GB`$
+      * Metadata storage increase each year = $`8.37GB * 12 = 100 GB`$
+      * Metadata storage required for 1st year = $`1 * 100GB = 100GB`$
+      * Metadata storage required for 2nd year = $`2 * 100GB = 200GB`$
+      * Metadata storage required for 3rd year = $`3 * 100GB = 300GB`$
+      * Metadata storage required for 5th year = $`5 * 100GB = 500GB`$
+      * Metadata storage required for 10th year = $`10 * 100GB = 1000GB`$
     * Media
         * Video storage increase each day - $`300MB * 10\% * 5*10^6 /1024/1024 = 143 TB`$
         * Video storage increase each month = $`143TB * 30 / 1024 = 4.18PB`$
@@ -50,7 +58,45 @@ Design a video sharing platform like YouTube.
 
 # APIs
 
-* TBD
+* Get Video by ID - `GET /api/v1/videos/:videoId` that produces response
+
+```json
+[
+  {
+    "title": "Top 10 Travel Destinations for 2024",
+    "description": "Explore the top 10 must-visit travel destinations for 2024! From exotic beaches to historic cities, this list will inspire your next adventure.",
+    "links": {
+      "360p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/360p",
+      "480p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/480p",
+      "720p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/720p",
+      "1080p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/1080p",
+      "4k": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/4k"
+    }
+  },
+  {
+    "title": "How to Cook the Perfect Steak",
+    "description": "Learn the secrets to cooking a restaurant-quality steak at home. This step-by-step guide covers everything you need to know to get that perfect sear and juicy flavor.",
+    "links": {
+      "360p": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/360p",
+      "480p": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/480p",
+      "720p": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/720p",
+      "1080p": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/1080p",
+      "4k": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/4k"
+    }
+  },
+  {
+    "title": "The History of Space Exploration",
+    "description": "Join us on a journey through time as we explore the history of space exploration, from the first moon landing to the latest missions to Mars.",
+    "links": {
+      "360p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/360p",
+      "480p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/480p",
+      "720p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/720p",
+      "1080p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/1080p",
+      "4k": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/4k"
+    }
+  }
+]
+```
 
 * Upload Video
     * start upload - `POST /api/v1/media/videos`, response will contain `200 OK` with `location` header pointing to the
