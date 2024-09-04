@@ -117,7 +117,7 @@ and `video_id` like `0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680`
 
 # High Level Design
 
-TBD
+![diagram.png](diagram.png)
 
 # Author
 
