@@ -32,7 +32,8 @@ Design a video sharing platform like YouTube.
     * Average video size - 300 MB
 * Storage
     * DB
-        * TBD
+        * Number of videos uploaded each day - $`10\% * 5*10^6 = 500k`$
+        * Average size of video metadata - $`TBD`$
     * Media
         * Video storage increase each day - $`300MB * 10\% * 5*10^6 /1024/1024 = 143 TB`$
         * Video storage increase each month = $`143TB * 30 / 1024 = 4.18PB`$
