@@ -109,17 +109,9 @@ Design a news feed system.
     * upload file chunks - `POST /api/v1/media/videos/0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680`
     * finalize upload - `POST /api/v1/media/images/0821b7c0-a08b-7dd4-a4f2-e1a8cb0c6680/finalize`
 
-# Entities
-
-TBD
-
 # High Level Design
 
-TBD
-
-# Deep dives
-
-TBD
+![diagram.png](diagram.png)
 
 # Author
 
