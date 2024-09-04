@@ -6,12 +6,30 @@ Design a video sharing platform like YouTube.
 
 # Functional requirements
 
-* TBD
+* Video upload
+* Video playback
+* Ability to change video quality playback
+* Support for different resolutions
+  * 360p
+  * 480p
+  * 720p
+  * 1080p
+  * 4k
+* Support for different clients
+  * Web Browser
+  * Mobile
+  * Tablets
+  * Smart TVs
+* Ability to upload videos of up to 1GB
 
 # Non-functional requirements
 
 * Traffic
-    * TBD
+  * Number of daily active users - 5 million
+  * Average daily time spend on the product - 30 minutes
+  * Average user watches 5 videos per day
+  * 10% of users upload 1 video per day
+  * Average video size - 300 MB
 * Storage
     * DB
         * TBD
