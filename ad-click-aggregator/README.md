@@ -7,7 +7,15 @@ performance based on ad clicks.
 
 # Functional requirements
 
-* TBD
+* User is redirected to an advertiser website after clicking on an Ad
+* Advertiser can query Ads performance by checking click metrics
+* Ads performance and click metrics have 1 minute granularity
+
+## Out fo scope
+
+* Ad Targeting
+* Ad Serving
+* Cross Device Tracking
 
 # Non-functional requirements
 
