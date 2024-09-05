@@ -10,24 +10,32 @@ performance based on ad clicks.
 * User is redirected to an advertiser website after clicking on an Ad
 * Advertiser can query Ads performance by checking click metrics
 * Ads performance and click metrics have 1 minute granularity
+* Protection against clicking an Ad multiple times that would skew Ad analytics, only first click on an Ad is recorded
+  for a given user
 
 ## Out of scope
 
-* Ad Targeting
-* Ad Serving
+* Ad serving and placement in a website or an app
 * Cross Device Tracking
+* Conversion tracking
+* Demographic profiling
 
 # Non-functional requirements
 
 * Traffic
-    * TBD
+  * 10 million Ads at any given time
+  * 10k Ads clicks per second
 * Storage
     * DB
         * TBD
 * Availability - 99.9%
-* Latency - <300ms
-* Data consistency - eventual
-* Client types - Browser, Mobile
+* Latency
+  * Ad placement <300ms
+  * Analytics Queries <1000ms
+* Data consistency
+  * strong
+  * analytics as realtime as possible
+* Client types - Browser, Mobile App
 
 # APIs
 
