@@ -49,6 +49,19 @@ performance based on ad clicks.
 * Click on Ad and Get Redirection - `GET /api/v1/ads/:adId/redirect` that returns `HTTP 302 Found` with `Location`
   response header set to Ad url.
 
+* Get Ad Performance Data - `GET /api/v1/ads/:adId/performance/data` that returns performance data in a format like:
+
+```json
+{
+  "adId": "0191c1be-cb2d-7db6-94e9-dd600f72b3d5",
+  "timeRange": {
+    "start": "2024-09-05T17:45:00+02:00",
+    "end": "2024-09-05T17:45:59+02:00"
+  },
+  "totalClicks": "385471"
+}
+```
+
 # High Level Design
 
 ![diagram.png](diagram.png)
