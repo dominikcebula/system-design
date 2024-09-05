@@ -65,6 +65,7 @@ Design a video sharing platform like YouTube.
   {
     "title": "Top 10 Travel Destinations for 2024",
     "description": "Explore the top 10 must-visit travel destinations for 2024! From exotic beaches to historic cities, this list will inspire your next adventure.",
+    "state": "DRAFT",
     "links": {
       "360p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/360p",
       "480p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eb4-add9-4c36e1dea811/480p",
@@ -76,6 +77,7 @@ Design a video sharing platform like YouTube.
   {
     "title": "How to Cook the Perfect Steak",
     "description": "Learn the secrets to cooking a restaurant-quality steak at home. This step-by-step guide covers everything you need to know to get that perfect sear and juicy flavor.",
+    "state": "PUBLISHED",
     "links": {
       "360p": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/360p",
       "480p": "https://cdn.video-share.com/videos/0191bde4-1ef3-744c-ae1f-9ce2c219ec75/480p",
@@ -87,6 +89,7 @@ Design a video sharing platform like YouTube.
   {
     "title": "The History of Space Exploration",
     "description": "Join us on a journey through time as we explore the history of space exploration, from the first moon landing to the latest missions to Mars.",
+    "state": "READY_TO_BE_PUBLISHED",
     "links": {
       "360p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/360p",
       "480p": "https://cdn.video-share.com/videos/0191bde4-1ef3-7eae-a4ec-6fa4aa5e982c/480p",
