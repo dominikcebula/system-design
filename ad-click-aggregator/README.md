@@ -2,7 +2,8 @@
 
 # Overview
 
-TBD
+Design Ad Click Aggregator System that will be used to display Ads on a website or an app. System should track Ads
+performance based on ad clicks.
 
 # Functional requirements
 
