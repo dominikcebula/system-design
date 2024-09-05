@@ -8,6 +8,7 @@ This repository contains sample System Design Problems.
 * [Notification System](notification-system%2FREADME.md)
 * [News Feed](news-feed%2FREADME.md)
 * [Video Sharing Platform](video-sharing-platform%2FREADME.md)
+* [Ad Click Aggregator](ad-click-aggregator%2FREADME.md)
 
 # Author
 
