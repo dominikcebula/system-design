@@ -41,12 +41,14 @@ performance based on ad clicks.
 ```json
 {
   "adId": "0191c1be-cb2d-7db6-94e9-dd600f72b3d5",
+  "adImpressionId": "0191c354-ea64-73bb-ab10-e9423f97abe5",
   "adUrl": "http://ad-aggregator.com/api/v1/ads/0191c1be-cb2d-7db6-94e9-dd600f72b3d5/redirect",
   "htmlCode": "..."
 }
 ```
 
-* Click on Ad and Get Redirection - `GET /api/v1/ads/:adId/redirect` that returns `HTTP 302 Found` with `Location`
+* Click on Ad and Get Redirection - `GET /api/v1/ads/:adId/:adImpressionId/redirect` that returns `HTTP 302 Found` with
+  `Location`
   response header set to Ad url.
 
 * Get Ad Performance Data - `GET /api/v1/ads/:adId/performance/data` that returns performance data in a format like:
