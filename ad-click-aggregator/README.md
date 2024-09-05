@@ -43,7 +43,7 @@ performance based on ad clicks.
 
 # High Level Design
 
-TBD
+![diagram.png](diagram.png)
 
 # Author
 
