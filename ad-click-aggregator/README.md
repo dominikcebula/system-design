@@ -43,7 +43,7 @@ performance based on ad clicks.
   "adId": "0191c1be-cb2d-7db6-94e9-dd600f72b3d5",
   "adImpressionId": "0191c354-ea64-73bb-ab10-e9423f97abe5",
   "adImpressionIdSignature": "yL8CeJw7wsvMwMVoseCgg2PmGjbG05ylDG",
-  "adUrl": "http://ad-aggregator.com/api/v1/ads/0191c1be-cb2d-7db6-94e9-dd600f72b3d5/0191c354-ea64-73bb-ab10-e9423f97abe5/yL8CeJw7wsvMwMVoseCgg2PmGjbG05ylDG/redirect",
+  "adRedirectionUrl": "http://ad-aggregator.com/api/v1/ads/0191c1be-cb2d-7db6-94e9-dd600f72b3d5/0191c354-ea64-73bb-ab10-e9423f97abe5/yL8CeJw7wsvMwMVoseCgg2PmGjbG05ylDG/redirect",
   "htmlCode": "..."
 }
 ```
