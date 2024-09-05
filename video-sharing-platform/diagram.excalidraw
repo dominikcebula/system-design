@@ -2571,7 +2571,7 @@
       "x": 1647.3199831185252,
       "y": 29.53858664353737,
       "width": 232.00418662100378,
-      "height": 85,
+      "height": 110,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -2587,8 +2587,8 @@
         "type": 3
       },
       "seed": 981876311,
-      "version": 236,
-      "versionNonce": 1492215609,
+      "version": 237,
+      "versionNonce": 1020446617,
       "isDeleted": false,
       "boundElements": [
         {
@@ -2604,7 +2604,7 @@
           "type": "arrow"
         }
       ],
-      "updated": 1725525083147,
+      "updated": 1725526274403,
       "link": null,
       "locked": false
     },
@@ -2614,7 +2614,7 @@
       "x": 1657.8021484505116,
       "y": 34.53858664353737,
       "width": 211.03985595703125,
-      "height": 75,
+      "height": 100,
       "angle": 0,
       "strokeColor": "#1e1e1e",
       "backgroundColor": "transparent",
@@ -2628,20 +2628,20 @@
       "index": "bDLV",
       "roundness": null,
       "seed": 953436215,
-      "version": 228,
-      "versionNonce": 278009881,
+      "version": 249,
+      "versionNonce": 1087949913,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1725525083147,
+      "updated": 1725526275714,
       "link": null,
       "locked": false,
-      "text": "Video State Changes \nNotification \nSubscription",
+      "text": "Video State Changes \nNotification \nSubscription with \nVideo ID Filter",
       "fontSize": 20,
       "fontFamily": 5,
       "textAlign": "center",
       "verticalAlign": "middle",
       "containerId": "UhittozMqRSE-c7I1wl9F",
-      "originalText": "Video State Changes Notification Subscription",
+      "originalText": "Video State Changes Notification Subscription with Video ID Filter",
       "autoResize": true,
       "lineHeight": 1.25
     },
