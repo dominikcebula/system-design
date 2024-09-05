@@ -15,7 +15,7 @@ performance based on ad clicks.
 
 ## Out of scope
 
-* Ad serving and placement in a website or an app
+* Details Ad serving and placement in a website or an app
 * Cross Device Tracking
 * Conversion tracking
 * Demographic profiling
@@ -39,7 +39,18 @@ performance based on ad clicks.
 
 # APIs
 
-* TBD
+* Get Ad data - `GET /api/v1/ads/:adId` that returns response body
+
+```json
+{
+  "adId": "0191c1be-cb2d-7db6-94e9-dd600f72b3d5",
+  "adUrl": "http://ad-aggregator.com/api/v1/ads/0191c1be-cb2d-7db6-94e9-dd600f72b3d5/redirect",
+  "htmlCode": "..."
+}
+```
+
+* Click on Ad and Get Redirection - `GET /api/v1/ads/:adId/redirect` that returns `HTTP 302 Found` with `Location`
+  response header set to Ad url.
 
 # High Level Design
 
