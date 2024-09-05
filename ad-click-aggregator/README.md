@@ -11,7 +11,7 @@ performance based on ad clicks.
 * Advertiser can query Ads performance by checking click metrics
 * Ads performance and click metrics have 1 minute granularity
 
-## Out fo scope
+## Out of scope
 
 * Ad Targeting
 * Ad Serving
