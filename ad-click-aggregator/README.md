@@ -25,9 +25,6 @@ performance based on ad clicks.
 * Traffic
   * 10 million Ads at any given time
   * 10k Ads clicks per second
-* Storage
-    * DB
-        * TBD
 * Availability - 99.9%
 * Latency
   * Ad placement <300ms
