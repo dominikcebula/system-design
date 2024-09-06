@@ -69,7 +69,7 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * by geolocation - `GET /api/v1/search?keywords=...&latitude=...&longitude&=...&radius=...`
     * by named location - `GET /api/v1/search?keywords=...&location=...&locationType=...&radius=...`
 
-response body:
+responds with `200 OK` and response body:
 
 ```json
 {
