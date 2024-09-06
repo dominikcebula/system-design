@@ -27,9 +27,9 @@ Design Location Based Business Search Service like Yelp or Google Places.
 * Storage
     * 200 million registered businesses
   * Number of bytes for single business registration
-      * Max - $`4942B`$
-      * Avg = $`711B`$
-  * Number of bytes for business registrations (avg) = $`200*10^6 * 711 /1024/1024/1024 = 132GB`$
+      * Max - $`4780B`$
+      * Avg = $`693B`$
+  * Number of bytes for business registrations (avg) = $`200*10^6 * 693 /1024/1024/1024 = 129GB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency - eventual
@@ -37,7 +37,7 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 # Entity
 
-* Business - max=4942, avg=711
+* Business - max=4780, avg=693
     * ID - 16 bytes
     * Title - 100 bytes
     * Description - 2000 bytes
@@ -49,8 +49,8 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * ApartmentNumber - 16 bytes
     * Zip Code - 10 bytes
     * State - 85 bytes
-    * City - 85 bytes
-    * City District - 85 bytes
+  * City ID - 4 bytes
+  * City District ID - 4 bytes
   * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
   * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
       * Monday
@@ -60,6 +60,17 @@ Design Location Based Business Search Service like Yelp or Google Places.
       * Friday
       * Saturday
       * Sunday
+
+* City - max=121, avg=46
+    * ID - 4 bytes
+    * Name - 85 bytes
+    * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
+
+* City District - max=125, avg=55
+    * ID - 4 bytes
+    * City ID - 4 bytes
+    * Name - 85 bytes
+    * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
 
 # APIs
 
