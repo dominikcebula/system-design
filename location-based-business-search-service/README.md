@@ -27,9 +27,9 @@ Design Location Based Business Search Service like Yelp or Google Places.
 * Storage
     * 200 million registered businesses
   * Number of bytes for single business registration
-      * Max - 4910 bytes
-      * Avg = 679 bytes
-  * Number of bytes for business registrations (avg) = $`200*10^6 * 679 /1024/1024/1024 = 126GB`$
+      * Max - 4926 bytes
+      * Avg = 695 bytes
+  * Number of bytes for business registrations (avg) = $`200*10^6 * 695 /1024/1024/1024 = 130GB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency
@@ -38,30 +38,31 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 # Entity
 
-* Business - max=4910, avg=679
+* Business - max=4926, avg=695
+    * ID - 16 bytes
     * Title - 100 bytes
     * Description - 2000 bytes
     * Phone Number - 16 bytes
     * E-Mail - 320 bytes
     * Website - 2048 bytes
-  * Street Name - 85 bytes
-  * BuildingNumber - 16 bytes
-  * ApartmentNumber - 16 bytes
-  * Zip Code - 10 bytes
-  * State - 85 bytes
-  * City - 85 bytes
-  * City District - 85 bytes
-  * Geolocation - 16 bytes
-      * latitude - 8 bytes
-      * longitude - 8 bytes
-      * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
-          * Monday
-          * Tuesday
-          * Wednesday
-          * Thursday
-          * Friday
-          * Saturday
-          * Sunday
+    * Street Name - 85 bytes
+    * BuildingNumber - 16 bytes
+    * ApartmentNumber - 16 bytes
+    * Zip Code - 10 bytes
+    * State - 85 bytes
+    * City - 85 bytes
+    * City District - 85 bytes
+    * Geolocation - 16 bytes
+        * latitude - 8 bytes
+        * longitude - 8 bytes
+        * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
+            * Monday
+            * Tuesday
+            * Wednesday
+            * Thursday
+            * Friday
+            * Saturday
+            * Sunday
 
 # APIs
 
@@ -81,6 +82,8 @@ responds with `200 OK` and response body:
   ]
 }
 ```
+
+* Get
 
 # High Level Design
 
