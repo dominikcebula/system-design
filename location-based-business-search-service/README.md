@@ -27,9 +27,9 @@ Design Location Based Business Search Service like Yelp or Google Places.
 * Storage
     * 200 million registered businesses
   * Number of bytes for single business registration
-      * Max - $`4942B + 32B + 101B + 101B = 5176B`$
-      * Avg = $`711B + 32B + 26B + 32B = 801B`$
-  * Number of bytes for business registrations (avg) = $`200*10^6 * 801 /1024/1024/1024 = 149GB`$
+      * Max - $`4942B`$
+      * Avg = $`711B`$
+  * Number of bytes for business registrations (avg) = $`200*10^6 * 711 /1024/1024/1024 = 132GB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency - eventual
