@@ -21,17 +21,35 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 * Traffic
     * 100 million daily active users
-    * 200 million registered businesses
     * Average user makes 5 queries per day
     * Number of queries per day = $`5 * 100*10^6 = 500 million`$
     * Number of queries per second = $`500*10^6 / 86400 = 5787`$
 * Storage
-    * TBD
+    * 200 million registered businesses
+    * Number of bytes for single business
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency
     * eventual
 * Client types - Browser, Mobile App
+
+# Entity
+
+* Business
+    * Title
+    * Description
+    * Phone Number
+    * E-Mail
+    * Website
+    * Address
+    * Opening and Closing Hours
+        * Monday
+        * Tuesday
+        * Wednesday
+        * Thursday
+        * Friday
+        * Saturday
+        * Sunday
 
 # APIs
 
