@@ -8,11 +8,11 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 * User can search for businesses based on keywords and selected location
     * Location can be:
+        * current user location with radius
         * a city
         * a city with radius
         * a city district
         * a city district with radius
-        * current user location with radius
 * User can see details on a selected business
 * Business owners can add, update, delete a business
 * Business changes made by business owners can appear in search results with a delay
