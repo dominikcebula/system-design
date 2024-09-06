@@ -26,10 +26,10 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * Number of queries per second = $`500*10^6 / 86400 = 5787`$
 * Storage
     * 200 million registered businesses
-  * Number of bytes for single business registration
-      * Max - $`4780B`$
-      * Avg = $`693B`$
-  * Number of bytes for business registrations (avg) = $`200*10^6 * 693 /1024/1024/1024 = 129GB`$
+    * Number of bytes for single business registration
+        * Max - $`4780B`$
+        * Avg = $`693B`$
+    * Number of bytes for business registrations (avg) = $`200*10^6 * 693 /1024/1024/1024 = 129GB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency - eventual
@@ -49,17 +49,17 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * ApartmentNumber - 16 bytes
     * Zip Code - 10 bytes
     * State - 85 bytes
-  * City ID - 4 bytes
-  * City District ID - 4 bytes
-  * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
-  * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
-      * Monday
-      * Tuesday
-      * Wednesday
-      * Thursday
-      * Friday
-      * Saturday
-      * Sunday
+    * City ID - 4 bytes
+    * City District ID - 4 bytes
+    * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
+    * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
+        * Monday
+        * Tuesday
+        * Wednesday
+        * Thursday
+        * Friday
+        * Saturday
+        * Sunday
 
 * City - max=121, avg=46
     * ID - 4 bytes
