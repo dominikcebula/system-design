@@ -56,7 +56,9 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 # APIs
 
-* TBD
+* Search for business
+    * by geolocation - `GET /api/v1/search?keywords=...&latitute=...&longtitude&=...&radius=...`
+    * by named location - `GET /api/v1/search?keywords=...&location=...&locationType=...&radius=...`
 
 # High Level Design
 
