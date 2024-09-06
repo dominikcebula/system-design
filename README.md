@@ -9,6 +9,7 @@ This repository contains sample System Design Problems.
 * [News Feed](news-feed%2FREADME.md)
 * [Video Sharing Platform](video-sharing-platform%2FREADME.md)
 * [Ad Click Aggregator](ad-click-aggregator%2FREADME.md)
+* [Location Based Business Search Service](location-based-business-search-service%2FREADME.md)
 
 # Author
 
