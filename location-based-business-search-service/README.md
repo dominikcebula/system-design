@@ -83,7 +83,13 @@ responds with `200 OK` and response body:
 }
 ```
 
-* Get
+* Get Business Details for a user - `GET /api/v1/business/:businessId`
+
+* Business Management operations for a business owner
+    * Create - `POST /api/v1/management/business`
+    * Read - `GET /api/v1/management/business/:businessId`
+    * Update - `PUT /api/v1/management/business/:businessId`
+    * Delete - `DELETE /api/v1/management/business/:businessId`
 
 # High Level Design
 
