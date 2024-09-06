@@ -145,6 +145,15 @@ should be executed against businesses table by including condition on distance f
 PostGIS Indexing should be applied for all Geolocations for PostgreSQL to use R-Tree Spatial Index to speed-up search by
 location and distance.
 
+## Search by City Name or City District Name with radius
+
+When searching by city name or city district name with radius, first geolocation of specific city or city district will
+need to be found. This operation will be fast by using indexing on top of name column in city and city district tables.
+
+Having geolocation found, businesses should be queried by using distance condition based on city or city district
+geolocation and each business. Operation will be fast by using R-Tree Spatial Index on both city / city district and
+business location.
+
 # Author
 
 Dominik Cebula
