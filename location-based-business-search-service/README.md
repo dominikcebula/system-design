@@ -27,18 +27,17 @@ Design Location Based Business Search Service like Yelp or Google Places.
 * Storage
     * 200 million registered businesses
   * Number of bytes for single business registration
-      * Max - $`4926B + 32B + 101B + 101B = 5160B`$
-      * Avg = $`695B + 32B + 26B + 32B = 785B`$
-  * Number of bytes for business registrations (avg) = $`200*10^6 * 785 /1024/1024/1024 = 146GB`$
+      * Max - $`4942B + 32B + 101B + 101B = 5176B`$
+      * Avg = $`711B + 32B + 26B + 32B = 801B`$
+  * Number of bytes for business registrations (avg) = $`200*10^6 * 801 /1024/1024/1024 = 149GB`$
 * Availability - 99.9%
 * Latency <300ms
-* Data consistency
-    * eventual
+* Data consistency - eventual
 * Client types - Browser, Mobile App
 
 # Entity
 
-* Business - max=4926, avg=695
+* Business - max=4942, avg=711
     * ID - 16 bytes
     * Title - 100 bytes
     * Description - 2000 bytes
@@ -52,9 +51,7 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * State - 85 bytes
     * City - 85 bytes
     * City District - 85 bytes
-    * Geolocation - 16 bytes
-        * latitude - 8 bytes
-        * longitude - 8 bytes
+  * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
   * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
       * Monday
       * Tuesday
@@ -63,20 +60,6 @@ Design Location Based Business Search Service like Yelp or Google Places.
       * Friday
       * Saturday
       * Sunday
-
-* Geolocation Index - max=32, avg=32
-    * Geolocation - 16 bytes
-        * latitude - 8 bytes
-        * longitude - 8 bytes
-    * Business ID - 16 bytes
-
-* City Index - max=101, avg=26
-    * City - 85 bytes
-    * Business ID - 16 bytes
-
-* City District Index - max=101, avg=32
-    * City District - 85 bytes
-    * Business ID - 16 bytes
 
 # APIs
 
