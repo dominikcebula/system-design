@@ -116,6 +116,35 @@ responds with `200 OK` and response body:
 
 ![diagram.png](diagram.png)
 
+# Deep Dives
+
+## DB Scaling
+
+Taking into account:
+
+* GB-level storage requirements
+* large amount of reads
+* small amount of writes
+
+decision was made to use read replicas and indexes for scalability while keeping a single database.
+
+Other approaches, listed below were not used because of added complexity without added benefits taking into account
+storage requirements:
+
+* Data Sharding
+* Multiple different dedicated databases
+
+## Search by Geo Location
+
+Design assumes usage of dedicated geospatial search index which can be achieved by using for example PostgreSQL &
+PostGIS.
+
+When searching by current user location and radius, location should be encoded using PostGIS Point, and then search
+should be executed against businesses table by including condition on distance from each found business.
+
+PostGIS Indexing should be applied for all Geolocations for PostgreSQL to use R-Tree Spatial Index to speed-up search by
+location and distance.
+
 # Author
 
 Dominik Cebula
