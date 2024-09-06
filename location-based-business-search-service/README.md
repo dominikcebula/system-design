@@ -26,7 +26,10 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * Number of queries per second = $`500*10^6 / 86400 = 5787`$
 * Storage
     * 200 million registered businesses
-    * Number of bytes for single business
+  * Number of bytes for single business registration
+      * Max - 4576 bytes
+      * Avg = 700 bytes
+  * Number of bytes for business registrations (avg) = $`200*10^6 * 700 /1024/1024/1024 = 130GB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency
@@ -35,14 +38,14 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 # Entity
 
-* Business
-    * Title
-    * Description
-    * Phone Number
-    * E-Mail
-    * Website
-    * Address
-    * Opening and Closing Hours
+* Business - max=4576, avg=700
+    * Title - 100 bytes
+    * Description - 2000 bytes
+    * Phone Number - 16 bytes
+    * E-Mail - 320 bytes
+    * Website - 2048 bytes
+    * Address - 64 bytes
+    * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
         * Monday
         * Tuesday
         * Wednesday
