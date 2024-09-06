@@ -85,6 +85,13 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * Name - 85 bytes
     * Geolocation (latitude, longitude) - `geography(POINT, 4326)` - 32 bytes
 
+* Indexes
+    * Business Geolocation - R-Tree Spatial Index
+    * City Name
+    * City Geolocation - R-Tree Spatial Index
+    * City District Name
+    * City District Geolocation - R-Tree Spatial Index
+
 # APIs
 
 * Search for business
