@@ -54,20 +54,33 @@ Design Location Based Business Search Service like Yelp or Google Places.
   * Geolocation - 16 bytes
       * latitude - 8 bytes
       * longitude - 8 bytes
-    * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
-        * Monday
-        * Tuesday
-        * Wednesday
-        * Thursday
-        * Friday
-        * Saturday
-        * Sunday
+      * Opening and Closing Hours - $`7 * 2 * 2 = 28 bytes`$
+          * Monday
+          * Tuesday
+          * Wednesday
+          * Thursday
+          * Friday
+          * Saturday
+          * Sunday
 
 # APIs
 
 * Search for business
     * by geolocation - `GET /api/v1/search?keywords=...&latitude=...&longitude&=...&radius=...`
     * by named location - `GET /api/v1/search?keywords=...&location=...&locationType=...&radius=...`
+
+response body:
+
+```json
+{
+  "total": "10",
+  "businesses": [
+    {
+      ...
+    }
+  ]
+}
+```
 
 # High Level Design
 
