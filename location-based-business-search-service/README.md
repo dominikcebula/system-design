@@ -25,21 +25,24 @@ Design Location Based Business Search Service like Yelp or Google Places.
     * Number of queries per day = $`5 * 100*10^6 = 500 million`$
     * Number of queries per second = $`500*10^6 / 86400 = 5787`$
 * Storage
-    * 200 million registered businesses
-    * Number of bytes for single business registration
-        * Max - $`4780B`$
-        * Avg = $`693B`$
-    * Number of bytes for business registrations (avg) = $`200*10^6 * 693 /1024/1024/1024 = 129GB`$
-    * Number of bytes for single city registration
-        * Max - $`121B`$
-        * Avg = $`46B`$
-    * Number of cities in US - $`19495`$
-    * Number of bytes for cities registrations (avg) = $`19495 * 46 /1024 = 875KB`$
-    * Number of bytes for single city district registration
-        * Max - $`125B`$
-        * Avg = $`55B`$
-    * Estimated Number of city districts in US - $`19495 * 3 = 58485`$
-    * Number of bytes for city districts registrations (avg) = $`58485 * 55 /1024/1024 = 3MB`$
+    * Businesses
+        * 200 million registered businesses
+        * Number of bytes for single business registration
+            * Max - $`4780B`$
+            * Avg = $`693B`$
+        * Storage for business registrations (avg) = $`200*10^6 * 693 /1024/1024/1024 = 129GB`$
+    * Cities
+        * Number of bytes for single city registration
+            * Max - $`121B`$
+            * Avg = $`46B`$
+        * Number of cities in US - $`19495`$
+        * Storage for cities registrations (avg) = $`19495 * 46 /1024 = 875KB`$
+    * Cities Districts
+        * Number of bytes for single city district registration
+            * Max - $`125B`$
+            * Avg = $`55B`$
+        * Estimated Number of city districts in US - $`19495 * 3 = 58485`$
+        * Storage for city districts registrations (avg) = $`58485 * 55 /1024/1024 = 3MB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency - eventual
