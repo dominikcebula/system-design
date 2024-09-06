@@ -30,6 +30,16 @@ Design Location Based Business Search Service like Yelp or Google Places.
         * Max - $`4780B`$
         * Avg = $`693B`$
     * Number of bytes for business registrations (avg) = $`200*10^6 * 693 /1024/1024/1024 = 129GB`$
+    * Number of bytes for single city registration
+        * Max - $`121B`$
+        * Avg = $`46B`$
+    * Number of cities in US - $`19495`$
+    * Number of bytes for cities registrations (avg) = $`19495 * 46 /1024 = 875KB`$
+    * Number of bytes for single city district registration
+        * Max - $`125B`$
+        * Avg = $`55B`$
+    * Estimated Number of city districts in US - $`19495 * 3 = 58485`$
+    * Number of bytes for city districts registrations (avg) = $`58485 * 55 /1024/1024 = 3MB`$
 * Availability - 99.9%
 * Latency <300ms
 * Data consistency - eventual
