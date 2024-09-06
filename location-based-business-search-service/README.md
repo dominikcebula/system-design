@@ -107,7 +107,7 @@ responds with `200 OK` and response body:
 
 # High Level Design
 
-TBD
+![diagram.png](diagram.png)
 
 # Author
 
