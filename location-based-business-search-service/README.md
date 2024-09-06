@@ -6,7 +6,7 @@ Design Location Based Business Search Service like Yelp or Google Places.
 
 # Functional requirements
 
-* User can search for businesses based selected location
+* User can search for businesses based on selected location
     * Location can be:
         * current user location with radius
         * a city
